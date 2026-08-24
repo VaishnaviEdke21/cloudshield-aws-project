@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CloudShield</title>
+    <link rel="stylesheet" href="style .css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CloudShield</h1>
+
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main class="dashboard">
+
+        <h2>Student Dashboard</h2>
+
+        <div class="card">
+            <h3>Welcome to CloudShield</h3>
+            <p>Your secure student portal.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Information</h3>
+
+            <p>
+    <strong>Name:</strong>
+    <span id="dashboardName"></span>
+</p>
+            <p>
+    <strong>Email:</strong>
+    <span id="dashboardEmail"></span>
+</p>
+            <p><strong>Course:</strong> Computer Applications</p>
+        </div>
+
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
