@@ -237,6 +237,86 @@ By completing this project, practical experience was gained in designing, deploy
 
 ## 📸 Project Screenshots
 
-### Website Running Through Application Load Balancer
+The following screenshots demonstrate the successful implementation, configuration, and testing of the CloudShield AWS infrastructure.
+
+### 1. Website Running Through Application Load Balancer
+
+The CloudShield web application was successfully deployed and accessed through the Application Load Balancer.
 
 ![CloudShield Website](screenshots/01-cloudshield-website-alb.png)
+
+---
+
+### 2. VPC Resource Map
+
+The CloudShield infrastructure is deployed inside a custom Amazon VPC with multiple subnets and Availability Zones to support secure and highly available architecture.
+
+![VPC Resource Map](screenshots/02-vpc-resource-map.png)
+
+---
+
+### 3. Healthy Target Group
+
+The Application Load Balancer Target Group successfully performs health checks and routes traffic only to healthy EC2 instances.
+
+![Healthy Target Group](screenshots/03-target-group-healthy.png)
+
+---
+
+### 4. Auto Scaling Activity
+
+EC2 Auto Scaling was configured using a Target Tracking Scaling Policy based on average CPU utilization.
+
+Auto Scaling activity was successfully tested to verify automatic scale-out and scale-in behavior according to application demand.
+
+![Auto Scaling Activity](screenshots/04-auto-scaling-activity.png)
+
+---
+
+### 5. AWS WAF Protection
+
+AWS WAF was associated with the Application Load Balancer to provide protection against common web attacks, malicious inputs, SQL injection attempts, and excessive requests.
+
+![AWS WAF Protection](screenshots/05-waf-protection-rules.png)
+
+---
+
+### 6. Private Amazon RDS MySQL Database
+
+Amazon RDS MySQL was deployed as a private database with public access disabled. Database access is restricted through Security Groups.
+
+![Amazon RDS MySQL](screenshots/06-rds-private-database.png)
+
+---
+
+### 7. EC2 to RDS Connectivity
+
+Secure connectivity between the EC2 application layer and the private Amazon RDS MySQL database was successfully verified on port 3306.
+
+Database read and write operations were also successfully tested.
+
+![EC2 to RDS Connection](screenshots/07-ec2-rds-connection.png)
+
+---
+
+### 8. Amazon CloudWatch Monitoring
+
+Amazon CloudWatch monitors CPU utilization and infrastructure performance. A high-CPU alarm was configured to monitor increased resource utilization.
+
+![CloudWatch CPU Alarm](screenshots/08-cloudwatch-cpu-alarm.png)
+
+---
+
+### 9. Amazon SNS Email Notifications
+
+Amazon SNS was integrated with CloudWatch to provide automated email notifications when configured alarm conditions are triggered.
+
+![SNS Email Notification](screenshots/09-sns-email-notification.png)
+
+---
+
+### 10. AWS CloudTrail Event History
+
+AWS CloudTrail records AWS management and API activity for auditing and infrastructure tracking. CloudTrail logs are configured for storage in Amazon S3.
+
+![CloudTrail Event History](screenshots/10-cloudtrail-event-history.png)
