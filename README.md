@@ -233,3 +233,10 @@ CloudShield demonstrates the implementation of a secure, scalable, highly availa
 The project combines networking, compute, load balancing, Auto Scaling, web security, database services, monitoring, notifications, and auditing into a complete cloud architecture.
 
 By completing this project, practical experience was gained in designing, deploying, securing, monitoring, testing, and troubleshooting AWS infrastructure.
+
+
+## 📸 Project Screenshots
+
+### Website Running Through Application Load Balancer
+
+![CloudShield Website](screenshots/01-cloudshield-website-alb.png)
